@@ -1,0 +1,395 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[slovak,english]{babel}
+\usepackage{geometry}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{setspace}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+\usepackage{enumitem}
+\usepackage{ulem}
+
+\geometry{a4paper, margin=2cm}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+\renewcommand{\arraystretch}{1.25}
+
+% helper for fillable line
+\newcommand{\fillline}[1][6cm]{\rule{#1}{0.4pt}}
+\newcommand{\smallfill}[1][3cm]{\rule{#1}{0.4pt}}
+
+% column types
+\newcolumntype{L}[1]{>{\RaggedRight\arraybackslash}p{#1}}
+
+\begin{document}
+
+% ---------- Title ----------
+\begin{center}
+\Large\bfseries VV – FORMULÁR ŽIADOSTI / APPLICATION FORM
+\end{center}
+
+\vspace{0.5cm}
+
+\begin{center}
+\textbf{VV - A1 \hfill Základné informácie o projekte / Basic information on the project}
+\end{center}
+
+\begin{longtable}{|L{0.15\textwidth}|L{0.5\textwidth}|L{0.3\textwidth}|}
+\hline
+Číslo & Popis / Description & - - - \\ \hline
+01 & Evidenčné číslo projektu / Project ID & xxxxx \\ \hline
+02 & Dátum podania / Date of submission & 9.11.2025 \\ \hline
+03 & Názov projektu / Project title & Blockchain pre sledovateľnosť potravín \\ \hline
+04 & Akronym projektu / Acronym & BIFOCAL \\ \hline
+05 & Odbor vedy a techniky / R\&D specialization & Informatika a informačné technológie \\ \hline
+06 & Charakter výskumu / R\&D characterization & Aplikovaný výskum kombinovaný s experimentálnym vývojom \\ \hline
+07 & Začiatok riešenia projektu / Project start & 22.9.2025 \\ \hline
+08 & Koniec riešenia projektu / Project end & 15.12.2025 \\ \hline
+09 & Anotácia / Annotation (max. 2 000 characters) & 
+\parbox[t]{\hsize}{Projekt sa zaoberá využitím blockchainu na zvýšenie sledovateľnosti potravín. Popisuje princípy technológie, možnosti integrácie s IoT a smart kontraktmi a ukazuje praktické prínosy pre transparentnosť dodávateľských reťazcov, bezpečnosť potravín a dôveru spotrebiteľov.} \\ \hline
+10 & Žiadateľská organizácia / Co-ordinating organization & Slovenská technická univerzita v Bratislave \\ \hline
+11 & Požadované finančné prostriedky z agentúry (v EUR) / Required budget from the agency (EUR) & 120,000 \\ \hline
+12 & Spolufinancovanie projektu (v EUR) / Financing from other sources (EUR) & 30,000 \\ \hline
+13 & Celkové náklady na projekt (v EUR) / Total project budget (EUR) & 150,000 \\ \hline
+\end{longtable} 
+
+\newpage
+
+% ---------------- Page 2 - Applicant organization information ----------------
+\begin{center}
+\textbf{VV - A2 \hfill Základné informácie o riešiteľských organizáciách / Basic Information on Participating Organization}
+\end{center}
+
+\textbf{Žiadateľ / Applicant}
+
+\begin{longtable}{|L{0.15\textwidth}|L{0.35\textwidth}|L{0.35\textwidth}|}
+\hline
+Číslo & Popis / Description & - - - \\ \hline
+01 & Názov organizácie / Name of organization & Slovenská technická univerzita v Bratislave \\ \hline
+02 & Skrátený názov / Abbreviation & STU \\ \hline
+03 & Adresa organizácie / Address & Ilkovičova 2, 812 19 Bratislava \\ \hline
+04 & IČO / ID & 00397560 \\ \hline
+05 & Príslušnosť k rezortu / Governmental branch & Ministerstvo školstva, vedy, výskumu a športu SR \\ \hline
+06 & Forma hospodárenia / Form of economy & Verejná vysoká škola \\ \hline
+07 & Kontaktná osoba / Contact person & Ing. Ivan Kapustík \\ 
+   & Telefón / Phone & +421 2 21022 444 \\ 
+   & E-mail & ivan.kapustik@stuba.sk \\ \hline
+08 & Štatutárny zástupca I / Statutory representative I & xxxxx \\ \hline
+09 & Štatutárny zástupca II / Statutory representative II & xxxxx \\ \hline
+\end{longtable}
+
+\newpage
+
+% ---------------- Page 3 - Cooperating organization information ----------------
+\begin{center}
+\textbf{VV - A2 \hfill Základné informácie o riešiteľských organizáciách / Basic Information on Participating Organization}
+\end{center}
+
+\textbf{Spoluriešiteľská organizácia / Cooperating organization}
+
+\begin{longtable}{|L{0.15\textwidth}|L{0.35\textwidth}|L{0.35\textwidth}|}
+\hline
+Číslo & Popis / Description & - - - \\ \hline
+01 & Názov organizácie / Name of organization & xxxxx \\ \hline
+02 & Skrátený názov / Abbreviation & xxxxx \\ \hline
+03 & Adresa organizácie / Address & xxxxx \\ \hline
+04 & IČO / ID & xxxxx \\ \hline
+05 & Príslušnosť k rezortu / Governmental branch & xxxxx \\ \hline
+06 & Forma hospodárenia / Form of economy & xxxxx \\ \hline
+07 & Kontaktná osoba / Contact person & xxxxx \\ \hline
+08 & Štatutárny zástupca I / Statutory representative I & xxxxx \\ \hline
+09 & Štatutárny zástupca II / Statutory representative II & xxxxx \\ \hline
+\end{longtable}
+
+\newpage
+
+% ---------------- Page 4 - List of participants ----------------
+\begin{center}
+\textbf{VV - A3 \hfill Zoznam riešiteľov / List of participants}
+\end{center}
+
+\textbf{Zoznam zamestnancov priamo sa podieľajúcich na riešení projektu / List of staff directly involved in project}
+
+\begin{longtable}{|L{0.25\textwidth}|L{0.18\textwidth}|L{0.15\textwidth}|L{0.10\textwidth}|L{0.10\textwidth}|L{0.10\textwidth}|}
+\hline
+Meno a priezvisko / Name and surname &  Pracovné zaradenie / Position & Dátum narodenia / DOB & IČO organizácie / Org. ID & Počet hodín / Hours & Počet hodín v rokoch / Hours (years) \\ \hline
+Simona Kubicseková & Hlavný riešiteľ & 7.5.2006 & xxxxx & 74 & 0.0084 \\ \hline
+Dominik Kužma & Pomocný riešiteľ & 13.11.2005 & xxxxx & 73 & 0.0083 \\ \hline
+Maroš Kvietok & Pomocný riešiteľ & 11.7.2006 & xxxxx & 73 & 0.0083 \\ \hline
+\end{longtable}
+
+\vspace{0.5cm}
+
+\begin{longtable}{|L{0.3\textwidth}|L{0.6\textwidth}|}
+\hline
+\multicolumn{2}{|l|}{Ostatní zamestnanci / Other staff} \\ \hline
+~ & Celkový počet ostatných osôb / Total number of other staff: 0 \\ \hline
+~ & Súhrnná kapacita ostatných osôb v hodinách / Total capacity of other staff in hours: 0 \\ \hline
+\multicolumn{2}{|l|}{Spolu / Total} \\ \hline
+~ & Celkový počet zamestnancov / Total number of involved staff: 3 \\ \hline
+~ & Súhrnná kapacita zamestnancov v hodinách / Total capacity of involved staff in hours: 220 \\ \hline
+\end{longtable}
+
+
+
+\newpage
+
+% ---------------- Page 5 - Principal Investigator basic information ----------------
+\begin{center}
+\textbf{VV - A4 \hfill Základné informácie o zodpovednom riešiteľovi / Basic information on the Principal Investigator}
+\end{center}
+
+\begin{tabular}{|L{0.1\textwidth}|L{0.45\textwidth}|L{0.4\textwidth}|}
+\hline
+01 & Meno a priezvisko / Name and surname & Simona Kubicseková \\ \hline
+02 & Pohlavie / Gender & Žena \\ \hline
+03 & Telefón / Phone & 0902 712 751 \\ \hline
+04 & Email & kubicsekovasimona@gmail.com \\ \hline
+\end{tabular}
+
+\vspace{1cm}
+
+\textbf{Čestné vyhlásenie zodpovedného riešiteľa / Declaration of Honour of the Principal Investigator}
+
+\vspace{0.5cm}
+Ja, \uline{Simona Kubicseková}, čestne vyhlasujem, že údaje uvedené v častiach „Základné informácie o zodpovednom
+riešiteľovi“ a v štruktúrovanom profesijnom životopise sú pravdivé.
+
+\vspace{1.5cm}
+
+\begin{minipage}{0.5\textwidth}
+\textbf{Podpis / Signature:} \\[1em]
+\rule{7cm}{0.4pt}
+\end{minipage}
+\begin{minipage}{0.45\textwidth}
+\textbf{Miesto / Place:} \uline{Bratislava} \\[0.6em]
+\textbf{Dátum / Date:} \uline{9.11.2025}
+\end{minipage}
+
+\newpage
+
+% ---------------- Page 6 - Additional PI info ----------------
+\begin{center}
+\textbf{VV - A4 \hfill Doplňujúce informácie o zodpovednom riešiteľovi}
+\end{center}
+
+\begin{longtable}{|L{0.1\textwidth}|L{0.7\textwidth}|}
+\hline
+05 & Zodpovedný riešiteľ je mladým vedeckým pracovníkom / Principal Investigator is an early career researcher: \smallfill[6cm] \\ \hline
+06a & Typ vedeckej databázy / Research database type: \smallfill[6cm] \\ \hline
+06a & ID výskumníka / Researcher ID: \smallfill[6cm] \\ \hline
+06b & Typ vedeckej databázy / Research database type: \smallfill[6cm] \\ \hline
+06b & ID výskumníka / Researcher ID: \smallfill[6cm] \\ \hline
+06c & Typ vedeckej databázy / Research database type: \smallfill[6cm] \\ \hline
+06c & ID výskumníka / Researcher ID: \smallfill[6cm] \\ \hline
+07 & Prehľad projektov zodpovedného riešiteľa (posledných 5 rokov): \\
+   & \parbox[t]{\hsize}{%
+       \rule{\hsize}{0.4pt}\\[0.6em]
+       \rule{\hsize}{0.4pt}\\[0.6em]
+       \rule{\hsize}{0.4pt}%
+     } \\ \hline
+\end{longtable}
+
+\newpage
+
+% ---------------- Page 7 - Project objectives and outputs ----------------
+\begin{center}
+\textbf{VV - B \hfill Ciele, zámery a výstupy projektu / Objectives, aims and outputs}
+\end{center}
+
+\begin{longtable}{|L{0.1\textwidth}|L{0.4\textwidth}|L{0.4\textwidth}|}
+\hline
+01 & Kľúčové slová / Keywords & Blockchain, reťazec, potraviny \\ \hline
+02 & Ciele projektu / Project objectives & Vytvorenie integrovaného rámca sledovateľnosti v súlade so stratégiou digitálnej transformácie Slovenska a iniciatívami EÚ \\ \hline
+03 & Zaradenie do TRL (úroveň) / TRL level & 1 (jeden) \\ \hline
+04 & Využitie výsledkov v praxi / Practical use of results:
+   & Zlepšenie bezpečnosti potravín,  
+podpora transparentnosti a dôvery spotrebiteľov,
+efektívnejšie riadenie dodávateľských reťazcov,
+podpora regulačného dohľadu a rozhodovania,
+možnosť rozšírenia do ďalších sektorov \\ \hline
+05 & Prehľad očakávaných výstupov / Planned outputs:
+   & Fungujúci systém sledovateľnosti, školenia, dokumentácia, prototyp senzorov \\ \hline
+\end{longtable}
+
+\newpage
+
+% ---------------- Page 8 - Budget table for Applicant (5 columns) ----------------
+\begin{center}
+\textbf{VV – C \hfill Rozpočet projektu v EUR / Budget of the project in EUR}
+\end{center}
+
+\vspace{0.3cm}
+
+\begin{longtable}{|L{0.35\textwidth}|c|c|c|c|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Rok / Year}} & \textbf{2025} & \textbf{2026} & \textbf{2027} & \textbf{Celkovo / Total} \\ \hline
+01 Bežné priame náklady / Direct running costs & 5 000 & 55 000 & 45 000 & 105 000 \\ \hline
+02 Mzdové náklady / Wages and personal costs & 2 500 & 25 000 & 22 000 & 49 500 \\ \hline
+03 Zdravotné a sociálne poistenie / Social and health insurance & 500 & 8 000 & 7 000 & 15 500 \\ \hline
+04 Cestovné náklady / Travel costs & 300 & 2 000 & 2 000 & 4 300 \\ \hline
+05 Materiál / Material & 800 & 10 000 & 7 000 & 17 800 \\ \hline
+06 Služby / Services & 500 & 6 000 & 5 000 & 11 500 \\ \hline
+07 Energie, vodné, stočné, komunikácie / Energy, utilities, comm. & 300 & 2 000 & 1 500 & 3 800 \\ \hline
+08 Náklady na popularizáciu / Popularization costs & 100 & 1 000 & 500 & 1 600 \\ \hline
+09 Bežné nepriame náklady / Indirect costs & 500 & 3 000 & 3 000 & 6 500 \\ \hline
+10 Bežné náklady spolu / Total running costs & \textbf{5 500} & \textbf{57 000} & \textbf{46 000} & \textbf{108 500} \\ \hline
+\multicolumn{1}{|L{0.35\textwidth}|}{Celkové náklady z agentúry / Total costs from agency} & 4 000 & 60 000 & 56 000 & 120 000 \\ \hline
+Spolufinancovanie / Financing from other sources & 1 000 & 14 000 & 15 000 & 30 000 \\ \hline
+Štátne (mimo agentúry) / State (outside agency) & 0 & 5 000 & 5 000 & 10 000 \\ \hline
+Zahraničné / Foreign & 0 & 2 000 & 3 000 & 5 000 \\ \hline
+Súkromné / Private & 1 000 & 7 000 & 7 000 & 15 000 \\ \hline
+\multicolumn{1}{|L{0.35\textwidth}|}{Celkové náklady / Total costs} & \textbf{5 000} & \textbf{74 000} & \textbf{71 000} & \textbf{150 000} \\ \hline
+\end{longtable}
+
+\newpage
+
+\textbf{Rozpis predpokladaných nákladov uplatňovaných z agentúry / List of expected costs covered by agency}
+
+\textbf{Organizácia / Organization:} Slovenská technická univerzita v Bratislave
+
+\begin{longtable}{|L{0.15\textwidth}|L{0.7\textwidth}|}
+\hline
+02 & Mzdové náklady a ostatné osobné náklady / Wages and other personal costs: \textbf{49 500} \\ \hline
+03 & Zdravotné a sociálne poistenie / Social and health insurance: \textbf{15 500} \\ \hline
+04 & Cestovné náklady / Travel costs: \textbf{4 300} \\ \hline
+05 & Materiál / Material: \textbf{17 800} \\ \hline
+06 & Služby / Services: \textbf{11 500} \\ \hline
+07 & Energie, vodné, stočné / Energy, utilities: \textbf{3 800} \\ \hline
+08 & Náklady na popularizáciu / Popularization costs: \textbf{1 600} \\ \hline
+09 & Bežné nepriame náklady / Indirect costs: \textbf{6 500} \\ \hline
+\end{longtable}
+
+
+\newpage
+
+% ---------------- Page 11 - Project schedule ----------------
+\begin{center}
+\textbf{VV – D 01 \hfill Harmonogram projektu / Project schedule}
+\end{center}
+
+\begin{longtable}{|L{0.28\textwidth}|L{0.28\textwidth}|L{0.28\textwidth}|}
+\hline
+Začiatok etapy / Begin of phase & Koniec etapy / End of phase & Názov etapy / Phase name \\ \hline
+22.9.2025 & 31.1.2026 & Výskum problematiky, analýza súčasných výziev v slovenských dodávateľských reťazcoch \\ \hline
+1.2.2026 & 7.5.2026 &  Identifikovanie regulačných požiadavok a iniciatívy EÚ \\ \hline
+8.5.2026 & 13.11.2026 & Systémový Design
+Registrácia a overovanie účastníkov. integrácia existujúcich digitálnych nástrojov, inštalácia IoT senzorov a QR/RFID označovania, školenie a certifikácia zamestnancov v oblasti. \\ \hline
+14.11.2026 & 11.7.2027 & Pilotná implementácia:
+Zameranie na sektory s vysokou prioritou - mlieko a mäso,
+vyhodnotiť výkonnosť pilotného projektu z hľadiska 
+rýchlosti a presnosti, dôvery spotrebiteľov, nákladovej efektívnosti a prevádzkovej efektívnosti.\\ \hline
+od 12.7.2027 &  & Rozšírenie sa do ďalších sektorov (ovocie, zelenina, nápoje)\\ \hline
+
+\end{longtable}
+
+\newpage
+
+\begin{center}
+\textbf{Zoznam prístrojov v projekte / List of Devices in Project}
+\end{center}
+
+\begin{longtable}{|L{0.5\textwidth}|L{0.5\textwidth}|}
+\hline
+Názov / Name & Popis / Description \\ \hline
+IoT senzory teploty a vlhkosti & Monitorovanie skladovacích a prepravných podmienok potravín v reálnom čase. \\ \hline
+QR/RFID čítačky & Pre overovanie a sledovanie pohybu produktov v dodávateľskom reťazci. \\ \hline
+Server a databázový systém & Centralizované ukladanie a spracovanie dát zo senzorov a čítačiek pre sledovateľnosť. \\ \hline
+Tablet / mobilné zariadenie & Použitie zamestnancami na registráciu účastníkov, čítanie QR/RFID a interakciu so systémom. \\ \hline
+Softvér na vizualizáciu dát & Analýza a prehľad sledovateľnosti produktov, reporting a podpora rozhodovania. \\ \hline
+\end{longtable}
+
+
+\newpage
+\section*{Čestné vyhlásenie žiadateľa / Declaration of Honour of the Applicant}
+
+Ja, dolu podpísaný/á \underline{\hspace{8cm}}, štatutárny zástupca / štatutárna zástupkyňa záväzne vyhlasujem, že: \\
+
+{\small
+\begin{itemize}[topsep=0pt, partopsep=0pt, itemsep=0pt, parsep=0pt]
+    \item organizácia má platné osvedčenie o spôsobilosti vykonávať výskum a vývoj v zmysle podmienok stanovených vo verejnej výzve v súlade § 26a zákona č. 172/2005 Z.z. v znení neskorších predpisov a je evidovaná v zozname spôsobilých osôb vykonávať výskum a vývoj;
+    \item všetky informácie obsiahnuté v dokumentácii návrhu sú pravdivé;
+    \item organizácia má, resp. zabezpečí vlastné zdroje na spolufinancovanie projektu*;
+    \item predložený návrh projektu nebol a nie je financovaný z iných zdrojov (národných alebo zahraničných);
+    \item organizácia neposkytne žiadnu nepriamu štátnu pomoc v zmysle špecifických podmienok výzvy;
+    \item organizácia nie je daňovým dlžníkom;
+    \item organizácia nie je dlžníkom poistného na sociálnom poistení a príspevkov na starobné dôchodkové sporenie;
+    \item organizácia nie je dlžníkom poistného na zdravotnom poistení;
+    \item organizácia nie je v likvidácii;
+    \item voči organizácii nie je vedený výkon rozhodnutia (nie je relevantné pre subjekty verejnej správy);
+    \item voči organizácii nebolo začaté konkurzné/reštrukturalizačné konanie (nie je relevantné pre subjekty verejnej správy);
+    \item na majetok organizácie nie je vyhlásený konkurz (nie je relevantné pre subjekty verejnej správy);
+    \item voči organizácii nebol zamietnutý návrh na vyhlásenie konkurzu pre nedostatok majetku (nie je relevantné pre subjekty verejnej správy);
+    \item organizácia neporušila zákaz nelegálnej práce a nelegálneho zamestnávania podľa osobitného predpisu od 1.4.2005;
+    \item organizácia má vysporiadané finančné vzťahy so štátnym rozpočtom;
+    \item organizácia bude súčinná pri poskytovaní dokladov preukazujúcich splnenie podmienok dotácie;
+    \item som si vedomý/á povinnosti poskytnutia informácií o výskume a vývoji pre zverejnenie;
+    \item som si vedomý/á povinnosti zverejnenia informácií o technickej infraštruktúre výskumu a vývoja;
+    \item som si vedomý/á, že APVV zverejní rozhodnutie o žiadostiach na svojej web stránke;
+    \item som si vedomý/á povinnosti popularizovať výsledky riešenia projektu;
+    \item predložený návrh projektu nebude financovaný z národných zdrojov iných grantových schém ako z príslušnej grantovej schémy APVV.
+\end{itemize}
+}
+
+Ako štatutárny zástupca / štatutárna zástupkyňa svojím podpisom zodpovedám za správnosť a pravdivosť údajov.  
+V prípade vyzvania zo strany APVV sa zaväzujem nahradiť toto čestné vyhlásenie aktuálnymi potvrdeniami.  
+Som si vedomý/á, že v prípade nepravdivých údajov bude žiadosť vyradená alebo dôjde k odstúpeniu od zmluvy.  
+
+\begin{longtable}{|p{0.5\textwidth}|p{0.4\textwidth}|}
+\hline
+Názov žiadateľskej organizácie & Slovenská technická univerzita v
+Bratislave \\ \hline
+Meno štatutárneho zástupcu / štatutárnej zástupkyne & \\ \hline
+Podpis & \\ \hline
+Miesto & Bratislava \\ \hline
+Dátum & \\ \hline
+\end{longtable}
+
+* len v prípade povinnosti spolufinancovať projekt
+
+\vspace{1cm}
+
+\textbf{EN Version / English translation:} \\
+
+I, the undersigned \underline{\hspace{8cm}}, statutory representative of the applicant, hereby declare that: \\
+
+{\small
+\begin{itemize}[topsep=0pt, partopsep=0pt, itemsep=0pt, parsep=0pt]
+    \item the organization holds a valid certificate to perform research and development in accordance with the public call conditions under § 26a Act No. 172/2005 Coll. and is registered in the list of eligible entities;
+    \item all information in the submitted proposal documentation is true;
+    \item the organization has or will provide own resources for co-financing the project*;
+    \item the submitted project proposal has not been and is not financed from other national or international sources;
+    \item the organization will not provide any illegal state aid according to the call conditions;
+    \item the organization is not a tax debtor;
+    \item the organization is not a debtor of social or health insurance contributions;
+    \item the organization is not in liquidation;
+    \item no enforcement proceedings or bankruptcy/restructuring proceedings are pending against the organization (if not applicable for public entities);
+    \item the organization has settled financial relations with the state budget;
+    \item the organization will cooperate in providing documents proving eligibility for the grant;
+    \item I am aware of the obligation to provide information about research and development for publication;
+    \item I am aware of the obligation to publish information about research and technical infrastructure;
+    \item I am aware that APVV will publish the decision on applications on its website;
+    \item I am aware of the obligation to popularize project results;
+    \item the submitted project proposal will not be financed from other national grant schemes than the APVV scheme.
+\end{itemize}
+}
+
+As the statutory representative, I am responsible for the accuracy and truthfulness of the information provided.  
+In case of APVV request, I commit to replace this declaration with current official confirmations.  
+I am aware that false information may result in exclusion of the application or contract termination.
+
+\begin{longtable}{|p{0.5\textwidth}|p{0.4\textwidth}|}
+\hline
+Name of the applicant organization & Slovak University of Technology in Bratislava \\ \hline
+Name of statutory representative & \\ \hline
+Signature & \\ \hline
+Place & Bratislava \\ \hline
+Date & \\ \hline
+\end{longtable}
+
+* only if co-financing of the project is required
+
+\end{document}
