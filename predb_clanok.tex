@@ -40,7 +40,7 @@ Očakávaným prínosom je zvýšenie dôvery spotrebiteľov, zníženie adminis
 
 \clearpage
 \tableofcontents
-\thispagestyle{plain} % čistá hlavička
+\thispagestyle{plain}
 
 \clearpage
 \pagestyle{plain}
@@ -53,7 +53,48 @@ Očakávaným prínosom je zvýšenie dôvery spotrebiteľov, zníženie adminis
 
 \subsection{Blockchain} \label{blockchain}
 
+Technológia \textit{blockchain} predstavuje spôsob uchovávania dát v decentralizovanej sieti, ktorý eliminuje potrebu centrálneho sprostredkovateľa. Vznikla v roku 2008 ako súčasť návrhu kryptomeny Bitcoin, no odvtedy sa jej využitie rozšírilo do mnohých oblastí – od bankovníctva až po verejnú správu. 
+\vspace{1em}
+
+Blockchain možno v jednoduchej forme predstaviť ako reťaz blokov (ako môžeme vidieť na obrázku~\ref{fig:blockchain_architecture}), kde každý blok obsahuje súbor transakcií a odkaz (tzv. hash) na predchádzajúci blok. Tento mechanizmus zabezpečuje, že žiadny blok nemožno spätne zmeniť bez narušenia celej štruktúry reťazca. Takto sa vytvára dôveryhodný a nemenný záznam udalostí, ktorý je navyše distribuovaný medzi všetkými účastníkmi siete.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{blockchain.png}
+    \caption{Zjednodušená architektúra blockchainu}
+    \label{fig:blockchain_architecture}
+\end{figure}
+
+Jednou z hlavných výhod blockchainu je jeho \textit{transparentnosť}. Každý účastník siete môže overiť údaje bez nutnosti dôvery v konkrétnu autoritu. Tento princíp je užitočný všade tam, kde je dôležité zabezpečiť integritu informácií – napríklad v logistike, energetike, či evidencii majetku. Naopak, nevýhodou býva energetická náročnosť niektorých mechanizmov a obmedzená rýchlosť spracovania transakcií.
+\vspace{1em}
+
+V posledných rokoch sa výskum zameriava na efektívnejšie modely, ako sú \textit{Proof of Stake} alebo \textit{Byzantine Fault Tolerance}, ktoré umožňujú rýchlejšie a ekologickejšie spracovanie údajov. Tieto prístupy robia blockchain atraktívnym aj pre oblasti mimo finančného sektora, napríklad pre zdravotníctvo či verejné registre \cite{zheng2018blockchain}.
+\vspace{1em}
+
+V súčasnosti sa blockchain skúma aj ako nástroj pre transparentnosť a dôveryhodnosť v rámci dodávateľských reťazcov, kde umožňuje bezpečné zdieľanie údajov medzi nezávislými aktérmi. Aj keď jeho implementácia prináša technické a organizačné výzvy, je považovaný za perspektívnu technológiu s potenciálom zásadne zmeniť spôsob, akým pracujeme s dátami.
+
+
 \subsection{Sledovateľnosť potravín (Food Traceability)} \label{sledovatelnost}
+
+Na poznatkoch o fungovaní technológie \textit{blockchain} je možné ďalej stavať pri jej uplatnení v konkrétnych oblastiach, kde je transparentnosť a dôveryhodnosť údajov mimoriadne dôležitá. Jednou z takýchto oblastí je \textit{sledovateľnosť potravín} (\textit{food traceability}), ktorá sa v súčasnosti stáva jednou z kľúčových tém v oblasti potravinovej bezpečnosti a riadenia dodávateľských reťazcov.
+\vspace{1em}
+
+Globalizácia a technologický pokrok spôsobili, že potraviny prechádzajú cez množstvo aktérov, hraníc a procesov, čo výrazne zvyšuje riziko podvodov, neefektívnosti a ohrozenia kvality. Tradičné systémy, ktoré sa spoliehajú na papierové záznamy, čiarové kódy alebo fragmentované databázy, často nedokážu zabezpečiť dostatočnú transparentnosť a spoľahlivosť. V tejto situácii sa \textit{blockchain} javí ako perspektívna technológia, ktorá môže zásadne zmeniť fungovanie potravinových dodávateľských reťazcov. Jeho základné vlastnosti – nemennosť, transparentnosť a odolnosť voči manipulácii – umožňujú vytvoriť systém, v ktorom je možné sledovať cestu potraviny od pôvodu až po konečného spotrebiteľa s vysokou mierou dôveryhodnosti \cite{galvez2018blockchain}.
+\vspace{1em}
+
+V posledných rokoch sa koncept sledovateľnosti potravín rýchlo rozvíja, keďže rastie dopyt po bezpečných a overiteľných produktoch. Viaceré podniky a obchodné reťazce implementujú digitálne riešenia, ktoré umožňujú presne určiť pôvod a kvalitu potravín. Napríklad využitie blockchainu v potravinovom sektore dokázalo výrazne skrátiť čas potrebný na vysledovanie pôvodu produktu z niekoľkých dní na niekoľko sekúnd. Podobné systémy testujú aj ďalšie svetové spoločnosti, ktoré sa snažia zvýšiť dôveru spotrebiteľov a eliminovať falšovanie potravín. Tieto príklady potvrdzujú, že blockchain nie je len teoretickým konceptom, ale aj praktickým nástrojom, ktorý dokáže zlepšiť rýchlosť a spoľahlivosť vysledovateľnosti \cite{tian2017food}.
+\vspace{1em}
+
+V rámci moderných riešení sa blockchain často kombinuje s technológiami Industry~4.0 a Web~3.0. Ide najmä o internet vecí (IoT), RFID, QR kódy, cloud computing a GPS. Tieto technológie umožňujú zber a prenos údajov v reálnom čase, ktoré sú následne zabezpečené a zdieľané prostredníctvom blockchainu. Zatiaľ čo niektoré pokročilé nástroje, ako umelá inteligencia, analýza veľkých dát, \textit{edge computing}, IPFS či metaverzum, sa zatiaľ používajú len zriedka, práve ich prepojenie s blockchainom predstavuje potenciál pre sofistikovanejšie a efektívnejšie riešenia sledovateľnosti.
+\vspace{1em}
+
+Zaujímavý smer predstavujú aj návrhy inteligentných systémov, ktoré kombinujú blockchain s umelou inteligenciou, cloudom a \textit{big data} na znižovanie potravinového odpadu. Takéto prístupy ukazujú, že sledovateľnosť nemusí byť len o spätnej kontrole pôvodu, ale aj o aktívnom riadení tokov potravín, predchádzaní stratám a efektívnejšom využívaní zdrojov. V budúcnosti môžu podobné modely umožniť rýchlejšie reakcie na krízy, lepšiu udržateľnosť a optimalizáciu celého dodávateľského reťazca.
+\vspace{1em}
+
+Tieto princípy majú paralely aj v iných odvetviach, kde sa blockchain využíva na zvýšenie dôvery a automatizáciu procesov, napríklad vo financiách či logistike. Spoločným znakom je využitie distribuovaného registra a \textit{smart kontraktov}, ktoré zabezpečujú transparentnosť a automatické vynucovanie pravidiel. V potravinovom sektore to znamená, že každý krok – od farmára cez spracovateľa až po obchodníka – môže byť zaznamenaný a overený bez možnosti dodatočnej manipulácie.
+\vspace{1em}
+
+Na začiatku tohto projektu sa sledovateľnosť potravín chápe ako súbor technológií a procesov, ktoré umožňujú prepojiť údaje o pôvode, spracovaní a distribúcii potravín do jednotného, dôveryhodného systému. Cieľom je zvýšiť transparentnosť, udržateľnosť a bezpečnosť potravinového reťazca, pričom blockchain môže slúžiť ako technický základ pre tieto ciele.
 
 \section{Integrácia blockchainu do sledovania potravín} \label{ina}
 
