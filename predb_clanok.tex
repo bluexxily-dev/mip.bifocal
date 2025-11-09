@@ -9,6 +9,7 @@
 \usepackage{xurl}
 \usepackage{hyperref} 
 \usepackage{fancyhdr}
+\usepackage{booktabs}
 
 \usepackage{cite}
 
@@ -79,7 +80,6 @@ V súčasnosti sa blockchain skúma aj ako nástroj pre transparentnosť a dôve
 Na poznatkoch o fungovaní technológie \textit{blockchain} je možné ďalej stavať pri jej uplatnení v konkrétnych oblastiach, kde je transparentnosť a dôveryhodnosť údajov mimoriadne dôležitá. Jednou z takýchto oblastí je \textit{sledovateľnosť potravín} (\textit{food traceability}), ktorá sa v súčasnosti stáva jednou z kľúčových tém v oblasti potravinovej bezpečnosti a riadenia dodávateľských reťazcov.
 \vspace{1em}
 
-Globalizácia a technologický pokrok spôsobili, že potraviny prechádzajú cez množstvo aktérov, hraníc a procesov, čo výrazne zvyšuje riziko podvodov, neefektívnosti a ohrozenia kvality. Tradičné systémy, ktoré sa spoliehajú na papierové záznamy, čiarové kódy alebo fragmentované databázy, často nedokážu zabezpečiť dostatočnú transparentnosť a spoľahlivosť. V tejto situácii sa \textit{blockchain} javí ako perspektívna technológia, ktorá môže zásadne zmeniť fungovanie potravinových dodávateľských reťazcov. Jeho základné vlastnosti – nemennosť, transparentnosť a odolnosť voči manipulácii – umožňujú vytvoriť systém, v ktorom je možné sledovať cestu potraviny od pôvodu až po konečného spotrebiteľa s vysokou mierou dôveryhodnosti \cite{galvez2018blockchain}.
 \vspace{1em}
 
 V posledných rokoch sa koncept sledovateľnosti potravín rýchlo rozvíja, keďže rastie dopyt po bezpečných a overiteľných produktoch. Viaceré podniky a obchodné reťazce implementujú digitálne riešenia, ktoré umožňujú presne určiť pôvod a kvalitu potravín. Napríklad využitie blockchainu v potravinovom sektore dokázalo výrazne skrátiť čas potrebný na vysledovanie pôvodu produktu z niekoľkých dní na niekoľko sekúnd. Podobné systémy testujú aj ďalšie svetové spoločnosti, ktoré sa snažia zvýšiť dôveru spotrebiteľov a eliminovať falšovanie potravín. Tieto príklady potvrdzujú, že blockchain nie je len teoretickým konceptom, ale aj praktickým nástrojom, ktorý dokáže zlepšiť rýchlosť a spoľahlivosť vysledovateľnosti \cite{tian2017food}.
@@ -98,13 +98,105 @@ Na začiatku tohto projektu sa sledovateľnosť potravín chápe ako súbor tech
 
 \section{Integrácia blockchainu do sledovania potravín} \label{ina}
 
+V posledných rokoch sa sledovateľnosť potravín stala základom dôvery spotrebiteľov aj dodržiavania predpisov v celej Európe. Globálne dodávateľské reťazce potravín sú čoraz komplexnejšie, a preto je schopnosť sledovať pôvod, manipuláciu a distribúciu potravinových výrobkov otázkou bezpečnosti aj konkurencieschopnosti.
+\cite{Patel2023FoodSafety}.
+\vspace{1em}
+
+Slovensko, člen Európskej únie so silnou poľnohospodárskou tradíciou, čelí výzvam pri harmonizácii domácich systémov sledovateľnosti s európskymi digitálnymi a environmentálnymi politikami. Fragmentované dátové systémy, obmedzená interoperabilita medzi regionálnymi poľnohospodárskymi družstvami a zastarané postupy vedenia záznamov bránia zabezpečeniu transparentných a efektívnych dodávateľských reťazcov.
+\cite{Floris2022SupplyChains_Slovakia}.
+\vspace{1em}
+
+Implementácia systému sledovateľnosti potravín založeného na blockchaine predstavuje príležitosť zvýšiť spoľahlivosť, efektívnosť a globálnu konkurencieschopnosť slovenského poľnohospodárstva. Táto časť článku navrhuje komplexný plán jeho zavedenia, ktorý zahŕňa inštitucionálne, právne, technické a prevádzkové aspekty. Cieľom je vytvoriť integrovaný rámec sledovateľnosti v súlade so stratégiou digitálnej transformácie Slovenska a iniciatívami EÚ „Z farmy na stôl“ a „Digitálna Európa“.
+\cite{EUrada}.
+\vspace{1em}
+
+\textbf{Strategický cieľ} národného systému sledovateľnosti potravín na Slovensku je vytvoriť jednotnú digitálnu infraštruktúru, ktorá umožní komplexnú viditeľnosť v celom dodávateľskom reťazci – od prvovýroby až po maloobchod. Tento cieľ podporuje niekoľko kľúčových priorít:
+
+\begin{itemize}
+\item \textbf{Bezpečnosť potravín a dôvera spotrebiteľov:} Umožňuje rýchlu reakciu na kontamináciu a sťahovanie výrobkov z trhu.
+\item \textbf{Konkurencieschopnosť vývozu:} Transparentný a overiteľný pôvod výrobkov je čoraz viac požiadavkou medzinárodných trhov.
+\item \textbf{Environmentálna zodpovednosť:} Sledovanie uhlíkovej stopy, používania pesticídov a dodržiavania predpisov v oblasti dobrých životných podmienok zvierat.
+\end{itemize}
+\vspace{1em}
+
+Hlavným prvkom slovenského systému by bola \textbf{povolená blockchainová sieť na báze konzorcia}. Povolený prístup zabezpečí, že sa môžu zúčastniť iba overené subjekty – ministerstvá, výrobcovia, spracovatelia a regulačné orgány – čím sa vyvažuje transparentnosť a kontrola údajov.
+
+Každý oprávnený účastník by prevádzkoval uzol siete, čím by sa podieľal na overovaní transakcií a zabezpečoval odolnosť systému. Blockchainová infraštruktúra by sa integrovala s existujúcimi národnými poľnohospodárskymi databázami, colnými systémami a platformami EÚ, ako sú TRACES a EFSA.
+\cite{Charlebois2024_Digital}.
+\vspace{1em}
+
+\textbf{Technický návrh} zahŕňa aj integráciu internetu vecí (IoT). Inteligentné senzory, RFID štítky a QR kódy by automaticky zaznamenávali údaje, ako sú teplota, vlhkosť a záznamy o preprave. Tieto zariadenia by sa prepájali s blockchainom prostredníctvom zabezpečených API, čím by sa minimalizovalo manuálne zadávanie údajov a riziko falšovania.
+\vspace{1em}
+
+Pre správu údajov by sa mala použiť hybridná architektúra: kritické údaje o sledovateľnosti (časové pečiatky, prevody vlastníctva, certifikáty) uložené v reťazci, zatiaľ čo veľké alebo citlivé súbory (laboratórne výsledky, obrázky, dokumenty) sú uchovávané v šifrovaných databázach mimo reťazca prepojených prostredníctvom hashov. To zaisťuje efektívnosť a škálovateľnosť a zároveň zachováva auditovateľnosť.
+{Patel2023FoodSafety}
+\vspace{1em}
+
+Pilotný projekt by sa zameral najskôr na \textbf{sektor mlieka a mäsa}, ktoré majú vysoké nároky na sledovateľnosť a etablované exportné trhy. Účastníci – regionálne družstvá, bitúnky a distribútori – by testovali štandardizáciu formátov údajov a transakčných postupov. Každý účastník by prešiel digitálnym zaškolením.
+\cite{2022SupplyChains}.
+
+\begin{table}[h!] \centering \begin{tabular}{@{}cl@{}} \toprule \textbf{ } & \textbf{Popis hlavných krokov na digitálne zaškolenie} 
+\\ \midrule 1 & Registrácia a overenie identity prostredníctvom národného poľnohospodárskeho registra. 
+\\ 2 & Integrácia existujúcich digitálnych nástrojov (napr. ERP systémy, softvér na riadenie fariem) s blockchainovými API. 
+\\ 3 & Školenie a certifikácia zamestnancov v protokoloch zadávania údajov. 
+\\ 4 & Inštalácia IoT senzorov alebo systémov označovania QR kódmi. \\ \bottomrule \end{tabular} \caption{Proces digitálneho zaškolenia účastníka} \label{tab:zastrenie} 
+\end{table}
+
+Po validácii by zozbierané údaje tvorili základnú vrstvu blockchainovej siete sledovateľnosti, čím by vznikol prvý nemenný reťazec záznamov pre slovenskú produkciu potravín. Po vyhodnotení pilotného projektu by sa systém mohol rozšíriť aj do sektorov ovocia, zeleniny a nápojov.
+\vspace{1em}
+
+Každý nový sektor by mal prejsť analýzou rizík a definovaním kritických bodov sledovateľnosti podľa princípov HACCP. Pre každý kritický bod sa vytvorí záznamový protokol, ktorý bude zaznamenávať:
+\begin{itemize}
+\item Dátum a čas spracovania produktu,
+\item Identifikáciu zdroja suroviny,
+\item Použité chemické látky alebo hnojivá,
+\item Parametre prepravy a skladovania,
+\item Certifikáty kvality a laboratórne výsledky.
+\end{itemize}
+\cite{Kononets2022_SmartContracts}
+\vspace{1em}
+
+Integrácia nových sektorov by mala byť podporená automatizovanými nástrojmi, ako sú predkonfigurované šablóny záznamov a API pre prepojenie s existujúcimi ERP a SCM systémami. Tým sa minimalizuje potreba manuálneho zadávania údajov a zvyšuje presnosť dát.
+\vspace{1em}
+
+Prevádzka vyžaduje aj pravidelné bezpečnostné audity, testovanie škálovateľnosti a stresové testy, aby bola sieť schopná zvládnuť sezónne špičky, ako sú zbery úrody alebo vývozné obdobia.
+\vspace{1em}
+
+\subsection{Technologický rozvoj a inovácia} \label{Integrácia blockchainu do sledovania potravín}
+
+Blockchainová infraštruktúra by mala byť navrhnutá s dôrazom na flexibilitu a modulárnosť, aby umožnila integráciu budúcich technológií:
+\begin{itemize}
+\item \textbf{Umelá inteligencia a prediktívna analytika:} Analýza veľkých dát z blockchainu umožní predpovedať riziká kontaminácie, optimalizovať logistiky a zlepšiť plánovanie pestovania.
+\item \textbf{Smart kontrakty:} Automatizácia zmluvných podmienok, napr. platby dodávateľom po potvrdení dodania alebo certifikácie produktu.
+\item \textbf{Interoperabilita s medzinárodnými platformami:} Prepojenie so systémami ako IBM Food Trust alebo VeChain umožní zdieľanie dát s exportnými partnermi a podporuje globálnu sledovateľnosť.
+\item \textbf{Decentralizovaná identita (DID):} Každý účastník, zariadenie a produkt môže byť jednoznačne identifikovaný, čo zvyšuje bezpečnosť a znižuje riziko podvodov.
+\end{itemize}
+
+Tento technologický rámec vytvára základ pre inteligentné, dátovo orientované poľnohospodárstvo, ktoré podporuje udržateľnosť, efektívnosť a konkurenčnú výhodu Slovenska na európskom trhu.
+
+\vspace{1em}
+
+\subsection{Škálovanie a udržateľnosť systému} \label{scaling}
+
+Po rozšírení na všetky prioritné sektory je potrebné pripraviť systém na dlhodobú udržateľnosť a škálovanie:
+\begin{itemize}
+\item \textbf{Postupné zapájanie menších farmárov a producentov:} Vytvorenie mobilných aplikácií a jednoduchých rozhraní na záznam údajov umožní aj malým subjektom bezpečne sa pripojiť k sieti.
+\item \textbf{Financovanie a incentívy:} Kombinácia štátnych dotácií, európskych fondov a motivačných programov pre účastníkov zvyšuje adopciu systému.
+\item \textbf{Priebežná aktualizácia technologických štandardov:} Blockchainový protokol, IoT zariadenia a API sa pravidelne aktualizujú podľa vývoja trhu a nových bezpečnostných štandardov.
+\item \textbf{Monitoring dopadov na životné prostredie:} Systém umožňuje meranie uhlíkovej stopy a spotreby zdrojov, čím podporuje environmentálne ciele EÚ.
+\end{itemize}
+
+Takto implementovaný systém umožní postupný prechod od pilotného projektu k plne funkčnej, udržateľnej a interoperabilnej národnej platforme sledovateľnosti potravín.
+\vspace{1em}
 
 \section{Prípadové štúdie / praktické príklady} \label{dolezita}
 
 
 \section{Záver} \label{zaver} 
 
+\clearpage
+
 \bibliography{literatura}
-\bibliographystyle{plain}
+\bibliographystyle{unsrt}
 
 \end{document}
